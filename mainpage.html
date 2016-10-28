@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/fullimg.css" rel="stylesheet" href="">
+	<meta charset="UTF-8">
+	<title>ShopAu</title>
+</head>
+<body>
+	<!--<div class="InDeveloping">In Developing</div>  -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main-img"></div>
+				</div>	
+			</div>
+			<div class="navbar navbar-static-top">
+				<div class="container">
+					<div class="row">					
+						<div class="navbar-header">
+							<button type = "button" class= "navbar-toggle" data-toggle= "collapse" data-target="#responsive-menu">
+								<spam class="sr-only">открыть навигацию</spam>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+
+							</button>
+							<a class="navbar-brand" href="#">Автозапчасти.by</a>
+						</div>
+						<div class="collapse navbar-collapse" id ="responsive-menu">
+							<ul class="nav navbar-nav">						
+								
+								<li><a href="#">Контакты</a></li>
+                               
+							</ul>
+							<div class="callnumber" id = "cn">+375447307518 <span class ="glyphicon glyphicon-earphone"></span></div>
+							<div class="registr"><a href="#">регистрация</a></div>
+						
+					</div>
+				</div>
+			</header>
+
+			<main>
+				<div class="container">
+					<div class="col-lg-3 col-md-3 col-sm-12 block-search">	
+						<div class="form col-lg-12 col-md-12 col-sm-12">
+							<div class="row">
+								<div class="col-lg-5 col-md-5 col-sm-4 col-xs-4"><h4>Марка</h4></div>
+								<div class="col-lg-7 col-md-7 col-sm-6 col-xs-6">
+									<select class="form-control">
+										<option>Acura</option>
+										<option>Alfa Romeo</option>
+										<option>Alpina</option>
+										<option>Aro</option>
+										<option>Asia</option>
+										<option value="">Audi</option>
+										<option value="">Bmw</option>
+										<option value="">Citroen</option>
+										<option value="">Fiat</option>
+										<option value="">Ford</option>
+										<option value="">Honda</option>
+										<option value="">Hyundai</option>
+										<option value="">Infinity</option>
+										<option value="">Jeep</option>
+										<option value="">Kia</option>
+										<option value="">Lend Rover</option>
+										<option value="">Lexus</option>
+										<option value="">Lifan</option>
+										<option value="">Mazda</option>
+										<option value="">Mercedes</option>
+										<option value="">Nissan</option>
+										<option value="">Opel</option>
+										<option value="">Peugeot</option>
+										<option value="">Renault</option>
+										<option value="">Suzuki</option>
+										<option value="">Seat</option>
+										<option value="">Scoda</option>
+										<option value="">Volkswagen</option>
+										<option value="">Volvo</option>								
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-5 col-md-5 col-sm-4 col-xs-4"><h4>Модель</h4></div>
+								<div class="col-lg-7 col-md-7 col-sm-6 col-xs-6">
+									<select class="form-control">
+										<option>7 series</option>
+										<option>m3</option>
+										<option>3</option>
+										<option>X5</option>
+										<option>X6</option>
+
+									</select>
+								</div>
+
+							</div>
+
+							<div class="row">
+								<div class="col-lg-5 col-md-5 col-sm-4 col-xs-4"><h4>кузов</h4></div>
+								<div class="col-lg-7 col-md-7 col-sm-6 col-xs-6">
+									<select class="form-control">
+										<option>е60</option>
+										<option>е60</option>
+										<option>е60</option>
+										<option>е60</option>
+										<option>е60</option>
+
+									</select>
+								</div>
+
+							</div>
+
+
+							<div class="row">
+								<div class="col-lg-5 col-md-5 col-sm-4 col-xs-4"><h4>Двигатель</h4></div>
+								<div class="col-lg-7 col-md-7 col-sm-6 col-xs-6">
+									<select class="form-control">
+										<option>н/и</option>
+										<option>100л.с бензин</option>
+										<option>200л.с бензин</option>
+										<option>110л.с дизель</option>
+										<option>100л.с дизель</option>
+										<option>200л.с дизель</option>
+
+									</select>
+								</div>
+
+							</div>
+							<div class="row">
+								
+								<div class="col-lg-8 col-md-8 col-sm-7 col-xs-4 find">
+									<input type="text" class="form-control finder" placeholder="Название детали">
+								</div>
+								
+								<button type="submit" class="btn btnFinder col-lg-3 col-md-3  col-sm-2 ">поиск</button>
+								
+
+							</div>
+
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 main-content">
+						<div class="col-lg-9"><h4>Поиск деталей для вашего авто:</h4></div>
+						<div class="col-lg-3"><h4>Найдено: 5 деталей</h4></div>
+						<div class="col-lg-12 form-res-seerch" onclick="preview()" id = "formpreviev">
+							<div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+								<img class="myImg" src="http://fastkat.ru/wp-content/uploads/2011/01/tormoznaja-kolodka.jpg" alt="Тормозная колодка">
+								<div id="myModal" class="modal">
+									<span class="close">x</span>
+									<img class="modal-content" id="img01">
+									<div id="caption"></div>
+								</div>							
+							</div>
+							<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+								<div class="name"><h4>Тормозная колодка</h4></div>
+								<div class="description"><h5>левая</h5></div>
+								<div class="firm"><h5>RAVENOL</h5></div>
+							</div>
+							<div class="col-lg-2 col-sm-2">
+								<h3>30р.</h3>
+								<h5 class = "valuey">Есть в наличии</h5>
+							</div>
+							<div class="col-lg-1">
+								
+							</div>
+							<div class="col-lg-12 description-frs" id="descriptionFrs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat dicta esse porro recusandae, voluptatem ratione, facere sint minima hic, odio aperiam nobis in? Consequuntur id placeat, corporis necessitatibus praesentium laboriosam.15</div>
+						</div>
+
+						<div class="col-lg-12 form-res-seerch" onclick="preview()">
+							<div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+
+								<img class="myImg" src="http://i.io.ua/img_su/large/0074/37/00743783_n1.png?r=659361149" alt="Тормозная колодка">
+								<div id="myModal" class="modal">
+									<span class="close">x</span>
+									<img class="modal-content" id="img01">
+									<div id="caption"></div>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+								<div class="name"><h4>Тормозная колодка</h4></div>
+								<div class="description"><h5>левая</h5></div>
+								<div class="firm"><h5>н/и</h5></div>
+							</div>
+							<div class="col-lg-2 col-sm-2">
+								<h3>45р.</h3>
+								<h5 class = "valuen">Нет в наличии</h5>
+							</div>
+							<div class="col-lg-1">
+
+							</div>
+						</div>
+
+						<div class="col-lg-12 form-res-seerch">
+							<div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+								<img class="myImg" src="http://www.galferrussia.ru/images/galfer/2_pastillas-fda1045_900.png" alt="Тормозная колодка">
+								<div id="myModal" class="modal">
+									<span class="close">x</span>
+									<img class="modal-content" id="img01">
+									<div id="caption"></div>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+								<div class="name"><h4>Тормозная колодка</h4></div>
+								<div class="description"><h5>правая</h5></div>
+								<div class="firm"><h5>н/и</h5></div>
+							</div>
+							<div class="col-lg-2 col-sm-2">
+								<h3>40р.</h3>
+								<h5 class = "valuey">Есть в наличии</h5>
+							</div>
+							<div class="col-lg-1">
+								
+							</div>
+						</div>
+
+						<div class="col-lg-12 form-res-seerch">
+							<div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+								<img class="myImg" src="http://sevres.ru/upload/goods/2969.1442920935.1.jpg" alt="Тормозная колодка">
+								<div id="myModal" class="modal">
+									<span class="close">x</span>
+									<img class="modal-content" id="img01">
+									<div id="caption"></div>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+								<div class="name"><h4>Тормозная колодка</h4></div>
+								<div class="description"><h5>левая</h5></div>
+								<div class="firm"><h5>RAVENOL</h5></div>
+							</div>
+							<div class="col-lg-2 col-sm-2">
+								<h3>30р.</h3>
+								<h5 class = "valuey">Есть в наличии</h5>
+							</div>
+							<div class="col-lg-1">
+
+							</div>
+						</div>
+
+						<div class="col-lg-12 form-res-seerch">
+							<div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+
+								<img class="myImg" src="http://sevres.ru/upload/goods/2969.1442920935.1.jpg" alt="Тормозная колодка">
+								<div id="myModal" class="modal">
+									<span class="close">x</span>
+									<img class="modal-content" id="img01">
+									<div id="caption"></div>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+								<div class="name"><h4>Тормозная колодка</h4></div>
+								<div class="description"><h5>левая и правая</h5></div>
+								<div class="firm"><h5>н/и</h5></div>
+							</div>
+							<div class="col-lg-2 col-sm-2">
+								<h3>50р.</h3>
+								<h5 class = "valuen">Нет в наличии</h5>
+							</div>
+							<div class="col-lg-1">
+								
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+       <div class="pay">
+				<button class="basketimg"></button>
+				<div class="paylist"><h4>В корзине: 0</h4></div>
+		
+					
+				</div>
+			</main>
+			<footer>
+			<div class="container">
+				<div class="background">
+
+					<div class="col-lg-4 block links">
+						<div class="contact"><a href="#">Контакты</a></div>
+						<div class="contact"><a href="#">Регистрация</a></div>
+						<div class="contact"><a href="#">Корзина</a></div>
+					</div>
+					<div class="col-lg-4 block description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt harum id cum ratione. Nesciunt harum id cum ratione.
+					</div>
+					<div class="col-lg-4 block authors">
+						<div class="aut1">Design by Dmitrey</div>
+					</div>
+					
+				
+			</div>
+			</footer>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<script src="js/bootstrap.js"></script>
+			<script src="js/js.js"></script>
+			<script src= "js/fullimg.js"></script>
+
+		</body>
+		</html>
